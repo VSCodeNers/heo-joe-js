@@ -2,9 +2,13 @@
 ###### in [Programmers](https://school.programmers.co.kr/learn/challenges?)  
 
 ```
-Language: Java
-Period: 2024.03.28.목 ~
+💻 Language: JavaScript
+🗓️ Period: 2024.03.28.목 ~
 ```
+
+<div align="center">
+ <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FVSCodeNers%2Fheo-joe-js&count_bg=%23ACC19B&title_bg=%23667960&icon=ifood.svg&icon_color=%23A6E0B2&title=hits&edge_flat=false"/></a>
+</div>
 
 ---
 
@@ -17,6 +21,6 @@ Period: 2024.03.28.목 ~
 
 ---
 
-### 🗓️ Weekly Study
+### 🤓 Weekly Study
 - [x] **1주차** | 2024.03.28.목 ~ 2024.04.03.수  
   **프로그래머스** : 다음 큰 숫자(Lv.2), 연속 부분 수열 합의 개수(Lv.2)  
