@@ -30,3 +30,5 @@
   **프로그래머스** : [튜플](https://school.programmers.co.kr/learn/courses/30/lessons/64065)(Lv.2), [k진수에서 소수 개수 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/92335)(Lv.2)  
 - [x] **4주차** | 2024.05.09.목 ~ 2024.05.16.목  
   **프로그래머스** : [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844)(Lv.2), [귤 고르기](https://school.programmers.co.kr/learn/courses/30/lessons/138476)(Lv.2)  
+- [x] **5주차** | 2024.05.16.목 ~ 2024.05.23.목  
+  **프로그래머스** : [호텔 대실](https://school.programmers.co.kr/learn/courses/30/lessons/155651)(Lv.2), [방문 길이](https://school.programmers.co.kr/learn/courses/30/lessons/49994)(Lv.2)  
