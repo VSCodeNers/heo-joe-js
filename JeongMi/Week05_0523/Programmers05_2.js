@@ -1,4 +1,4 @@
-// 프로그래머스 - 방문 길기(Lv.2)
+// 프로그래머스 - 방문 길이(Lv.2)
 function solution(dirs) {
   let answer = 0;
   let mapRow = Array.from(Array(11), () => Array(10).fill(false)); // 행
