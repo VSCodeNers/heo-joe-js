@@ -32,3 +32,5 @@
   **프로그래머스** : [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844)(Lv.2), [귤 고르기](https://school.programmers.co.kr/learn/courses/30/lessons/138476)(Lv.2)  
 - [x] **5주차** | 2024.05.16.목 ~ 2024.05.23.목  
   **프로그래머스** : [호텔 대실](https://school.programmers.co.kr/learn/courses/30/lessons/155651)(Lv.2), [방문 길이](https://school.programmers.co.kr/learn/courses/30/lessons/49994)(Lv.2)  
+- [x] **6주차** | 2024.05.23.목 ~ 2024.05.30.목  
+  **프로그래머스** : [롤케이크 자르기](https://school.programmers.co.kr/learn/courses/30/lessons/132265)(Lv.2), [뒤에 있는 큰 수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/154539)(Lv.2)  
