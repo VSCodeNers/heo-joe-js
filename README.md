@@ -36,3 +36,5 @@
   **프로그래머스** : [롤케이크 자르기](https://school.programmers.co.kr/learn/courses/30/lessons/132265)(Lv.2), [뒤에 있는 큰 수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/154539)(Lv.2)  
 - [x] **7주차** | 2024.05.30.목 ~ 2024.06.06.목  
   **백준** : [수 묶기(1744)](https://www.acmicpc.net/problem/1744), [가장 긴 바이토닉 부분 수열(11054)](https://www.acmicpc.net/problem/11054)  
+- [x] **8주차** | 2024.06.06.목 ~ 2024.06.13.목  
+  **백준** : [주사위 굴리기(14499)](https://www.acmicpc.net/problem/14499), [평범한 배낭(12865)](https://www.acmicpc.net/problem/12865)  
