@@ -22,7 +22,10 @@ const solution = ( input ) => {
         // i번째 물건을 담는 것과 안 담는 것 중 더 큰 값 구하기
         // 담을 경우 = i번째 물건을 담고 남는 무게에서의 최대 가치 + i번째 물건의 가치
         dp[i][j] = i == 0 ?
-          0
+          Math.max(
+            things[i][1],
+            0
+          )
           :
           Math.max(
             dp[i - 1][j - things[i][0]] + things[i][1],
