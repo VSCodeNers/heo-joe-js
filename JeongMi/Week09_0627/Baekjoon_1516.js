@@ -1,6 +1,6 @@
 // 백준 - 게임 개발(1516)
 const solution = ( input ) => {
-  const N = parseInt(input[0])
+  const N = parseInt(input[0]);
 
   let graph = Array.from({length: N + 1}, () => []);
   let indegree = Array(N + 1).fill(0);  // 건물 진입차수
