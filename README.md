@@ -42,3 +42,5 @@
   **백준** : [게임 개발(1516)](https://www.acmicpc.net/problem/1516), [동전(9084)](https://www.acmicpc.net/problem/9084)  
 - [x] **10주차** | 2024.06.27.목 ~ 2024.07.04.목  
   **백준** : [전깃줄(2565)](https://www.acmicpc.net/problem/2565), [스카이라인 쉬운거(1863)](https://www.acmicpc.net/problem/1863)  
+- [x] **11주차** | 2024.07.04.목 ~ 2024.07.11.목  
+  **백준** : [토마토(7569)](https://www.acmicpc.net/problem/7569), [고층 건물(1027)](https://www.acmicpc.net/problem/1027)  
