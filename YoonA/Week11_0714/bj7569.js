@@ -1,45 +1,76 @@
-const input = require('fs').readFileSync(filePath).toString().trim().split('\n');
-const N = +input[0];
-const buildings = [0].concat(input[1].split(' ').map(Number));
-let answer = Array(N + 1).fill(0);
+const input = require('fs').readFileSync("/dev/stdin").toString().trim().split('\n');
 
-// 모든 건물의 오른쪽, 왼쪽 건물 중 볼 수 있는 건물들 구함
-// + 그 중 최댓값 업데이트 하면서 뺑뺑이
-for (let i = 1; i <= N; i++) {
-    let rightMax = -Infinity;
-    let leftMin = Infinity;
-    const x1 = i;
-    const y1 = buildings[i];
-    // 오른쪽 볼 수 있는 빌딩 수
-    // 앞에 빌딩보다 기울기가 낮은 빌딩은 보이지 않기 때문에
-    // i번째 건물에서 가까운 건물부터 기울기를 계산함 (j)
-    // 앞에서 나온 최대 기울기보다 크면 볼 수 있는 count + 1
-    for (let j = i; j <= N; j++) {
-        if (i === j) continue;
-        const x2 = j;
-        const y2 = buildings[j];
-        const incline = (y2 - y1) / (x2 - x1);  // 기울기 구함
-        if (incline > rightMax) {
-            // i번째 빌딩에서 볼 수 있는 빌딩 수를 answer에 저장
-            answer[i]++;
-            rightMax = incline;
-        }
+// M: 상자 가로칸 수
+// N: 상자 세로칸 수
+// H: 쌓아올려지는 상자 수, z축 높이
+const [M, N, H] = input.shift().split(" ").map(Number);
+let tomatoes = [];
+
+// 토마토 저장
+for (let i = 0; i < H; i++) {
+    let temp = [];
+    for (let j = 0; j < N; j++) {
+        temp.push(input[i * N + j].split(" ").map(Number));
     }
-    // 왼쪽 볼 수 있는 빌딩 수
-    // 앞에 빌딩보다 기울기가 낮은 빌딩만 보이기 때문에
-    // 오른쪽 구하던 거랑 반대로
-    for (let j = i; j >= 1; j--) {
-        if (i === j) continue;
-        const x2 = j;
-        const y2 = buildings[j];
-        const incline = (y2 - y1) / (x2 - x1);
-        if (incline < leftMin) {
-            // i번째 빌딩에서 볼 수 있는 빌딩 수를 answer에 저장
-            answer[i]++;
-            leftMin = incline;
-        }
-    }
-    
+    tomatoes.push(temp);
 }
-// 가장 많은 고층빌딩이 보여야 하므로 answer에서 최댓값 출력
-console.log(Math.max(...answer));
+
+const solution = () => {
+    const dx = [1, -1, 0, 0, 0, 0];
+    const dy = [0, 0, 1, -1, 0, 0];
+    const dz = [0, 0, 0, 0, 1, -1];
+
+    const bfs = () => {
+        let unripeTomato = 0;   // 안 익은 토마토 수
+        let answer = 0;
+        const queue = [];
+
+        for (let i = 0; i < H; i++) {
+            for (let j = 0; j < N; j++) {
+                for (let k = 0; k < M; k++) {
+                    // 토마토가 익었다(1이다)면 큐에 push
+                    // 맨 끝에 0은 현재 날짜
+                    if (tomatoes[i][j][k] === 1) 
+                        queue.push([i, j, k, 0]);
+                    // 익지 않은 경우, 안 익은 토마토(unripeTomato) 개수 + 1
+                    if (tomatoes[i][j][k] === 0) 
+                        unripeTomato++;
+                }
+            }
+        }
+
+        let idx = 0;
+
+        while (queue.length > idx) {
+            const [z, x, y, day] = queue[idx++];
+
+            for (let i = 0; i < 6; i++) {
+                const nz = z + dz[i];
+                const nx = x + dx[i];
+                const ny = y + dy[i];
+
+                // 토마토가 배열 범위 안 넘고
+                if (nx >= 0 && ny >= 0 && nz >= 0 && nx < N && ny < M && nz < H) {
+                    // 익지 않았다면?
+                    if (tomatoes[nz][nx][ny] === 0) {
+                        // 해당 토마토를 익게 함
+                        // 해당 토마토의 위치를 큐에 넣어줌
+                        // 토마토가 하나 익었으므로 익지 않은 토마토(unripeTomato) 수 하나 감소
+                        tomatoes[nz][nx][ny] = 1;
+                        queue.push([nz, nx, ny, day + 1]);
+                        unripeTomato--;
+                    }
+                }
+            }
+            // 반복문 돌 때마다 현재 지난 날짜를 넣어줌
+            answer = day;
+        }
+        // 끝까지 익지 않은 토마토가 있으면 -1 return
+        // 없다면 걸린 일수(day) return
+        return unripeTomato ? -1 : answer;
+    };
+
+    return bfs();
+};
+
+console.log(solution());
