@@ -16,6 +16,7 @@ const solution = ( input ) => {
         min = temp;
       }
     }
+    
     // 오른쪽
     let max = -Infinity;
     for(let j = i + 1; j < N; j++) {
