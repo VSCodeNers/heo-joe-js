@@ -33,7 +33,7 @@ const dp = (first) => {
     return result;
 }
 
-function main() {
+const main = () => {
     const input = require('fs').readFileSync('/dev/stdin').toString().trim().split("\n");
 
     N = parseInt(input[0], 10);     // 집의 개수
