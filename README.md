@@ -46,3 +46,5 @@
   **백준** : [토마토(7569)](https://www.acmicpc.net/problem/7569), [고층 건물(1027)](https://www.acmicpc.net/problem/1027)  
 - [x] **12주차** | 2024.07.14.일 ~ 2024.07.21.일  
   **백준** : [X와 K(1322)](https://www.acmicpc.net/problem/1322), [RGB거리 2(17404)](https://www.acmicpc.net/problem/17404)  
+- [x] **13주차** | 2024.07.21.일 ~ 2024.07.28.일  
+  **백준** : [프렉탈 평면(1030)](https://www.acmicpc.net/problem/1030), [두 용액(2470)](https://www.acmicpc.net/problem/2470)  
