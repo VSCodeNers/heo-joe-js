@@ -9,6 +9,7 @@ let right = N - 1;
 let tempSum = Number.MAX_SAFE_INTEGER;  // 현재 찾은 가장 작은 합을 저장
 let answer = "";                        // 이때까지 찾은 가장 작은 합을 저장
 
+// left, right가 겹치지 않을 때까지 반복
 while (left < right) {
   let sum = solution[left] + solution[right];
 
