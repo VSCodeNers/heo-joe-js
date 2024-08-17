@@ -48,5 +48,7 @@
   **백준** : [X와 K(1322)](https://www.acmicpc.net/problem/1322), [RGB거리 2(17404)](https://www.acmicpc.net/problem/17404)  
 - [x] **13주차** | 2024.07.21.일 ~ 2024.08.04.일  
   **백준** : [프렉탈 평면(1030)](https://www.acmicpc.net/problem/1030), [두 용액(2470)](https://www.acmicpc.net/problem/2470)  
-- [x] **14주차** | 2024.08.04.일 ~ 2024.08.11.일  
+- [x] **14주차** | 2024.08.04.일 ~ 2024.08.18.일  
   **백준** : [거짓말(1043)](https://www.acmicpc.net/problem/1043)  
+- [x] **15주차** | 2024.08.18.일 ~ 2024.08.25.일  
+  **백준** : [공유기 설치(2110)](https://www.acmicpc.net/problem/2110)  
