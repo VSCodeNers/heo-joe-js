@@ -52,3 +52,4 @@
   **백준** : [거짓말(1043)](https://www.acmicpc.net/problem/1043)  
 - [x] **15주차** | 2024.08.18.일 ~ 2024.08.25.일  
   **백준** : [공유기 설치(2110)](https://www.acmicpc.net/problem/2110)  
+✅ 잠시 Java 연습기  
