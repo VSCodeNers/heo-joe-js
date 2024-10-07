@@ -3,7 +3,7 @@
 
 ```
 💻 Language: JavaScript
-🗓️ Period: 2024.03.28.목 ~
+🗓️ Period: 2024.03.28.목 ~ 2024.08.25.일
 ```
 
 <div align="center">
